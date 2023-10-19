@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border p-0 m-0;
+}
+.container {
+  @apply w-full max-w-[1980px] mx-auto min-h-screen relative;
+}
+.header {
+  @apply w-full text-white  bg-blue-500 flex flex-row flex-wrap justify-between px-16 py-8;
+}
+.header-left {
+  @apply flex justify-start items-center gap-x-12 min-w-[320px];
+}
+.header-left h1 {
+  @apply font-bold text-3xl;
+}
+.header-input {
+  @apply w-4/5 min-w-[320px] px-8 py-4 border-2 border-slate-950 text-black text-xl font-bold;
+}
+
+.btn {
+  @apply w-16 h-16  flex justify-center items-center bg-blue-300 border-slate-950 border-2  rounded
+  hover:bg-orange-500 focus:border-white  active:bg-green-500;
+}
+.img-container {
+  @apply w-full p-10 flex flex-row flex-wrap justify-center items-start gap-10 mx-auto pb-10;
+}
+.galery-item {
+  @apply hover:border-2 hover:rounded hover: border-red-400 cursor-pointer;
+}
+.item-title {
+  @apply w-full text-center text-2xl leading-10;
+}
+.footer {
+  @apply w-full flex flex-row justify-around items-center bg-black absolute bottom-0 left-0 py-4;
+}
+.footer-logo {
+  @apply w-24 h-14  bg-blue-500 shadow-light border-2 border-blue-300 rounded;
+}
+.footer-link {
+  @apply text-xl not-italic text-white font-bold hover:text-blue-300;
+}
+.modal {
+  @apply w-screen h-screen absolute top-0 bottom-0 left-0 right-0 bg-black/80 flex justify-center items-center px-8 md:px-28 lg:px-60;
+}
+/* .modal-content {
+  @apply w-4/5 mx-auto;
+} */
+.modal-close {
+  @apply w-10 h-10 rounded bg-red-500 text-white absolute top-20 right-20;
+}
+.error-msg {
+  @apply text-3xl text-blue-800 font-bold;
+}
+.stopScroll {
+  @apply truncate;
+}
+
+.animation-open {
+  @apply animate-open;
+}
+.animation-close {
+  @apply animate-close;
+}

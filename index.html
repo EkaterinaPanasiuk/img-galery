@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Img-galery</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header class="header">
+        <div class="header-left w-2/5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+            />
+          </svg>
+          <h1>Unsplash API</h1>
+        </div>
+        <div class="flex flex-row justify-end items-center">
+          <input
+            autofocus
+            class="header-input"
+            type="text"
+            id="search-input"
+            placeholder="Поиск"
+          />
+          <button type="button" id="search-btn" class="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+
+          <button class="btn" type="button" id="search-btn-clean">Clean</button>
+        </div>
+      </header>
+      <main class="main">
+        <div id="img-container" class="img-container"></div>
+      </main>
+      <footer class="footer">
+        <a class="footer-link" href="https://github.com/EkaterinaPanasiuk/"
+          >EkaterinaPanasiuk-GitHub</a
+        >
+        <span class="footer-link">2023</span>
+        <img
+          src="https://rs.school/images/rs_school_js.svg"
+          alt="RS-School-logo"
+          class="footer-logo"
+        />
+        <a class="footer-link" href="https://rs.school/js-stage0/"
+          >Подготовительный курс «JavaScript/Front-end. Stage 0»</a
+        >
+      </footer>
+      <!--   <div class=" hidden " id="modal"> -->
+
+      <div class="invisible" id="modal">
+        <button class="modal-close" id="close-modal">Close</button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>
